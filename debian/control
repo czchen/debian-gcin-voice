@@ -1,0 +1,26 @@
+Source: gcin-voice
+Section: utils
+Priority: optional
+Maintainer: IME Packaging Team <pkg-ime-devel@lists.alioth.debian.org>
+Uploaders:
+ ChangZhuo Chen (陳昌倬) <czchen@gmail.com>
+Build-Depends:
+ debhelper (>= 9)
+Standards-Version: 3.9.5
+Homepage: http://hyperrate.com/dir.php?eid=67
+Vcs-Git: git://anonscm.debian.org/pkg-ime/gcin-voice.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-ime/gcin-voice.git;a=summary
+
+Package: gcin-voice
+Architecture: all
+Enhances:
+ gcin (>= 1.3.5),
+ hime (>= 0.9)
+Suggests:
+ vorbis-tools
+Depends:
+ ${misc:Depends}
+Description: gcin voice data
+ This package provides gcin voice data. The data contain ogg sound for every
+ Chinese word. With it, gcin can play sound during typing to enhance typing
+ performance.
