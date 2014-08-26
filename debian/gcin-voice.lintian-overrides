@@ -1,3 +1,3 @@
 # Create empty directories to prevent update-alternative fails.
-gcin-voice binary: package-contains-empty-directory usr/share/gcin/ogg/
-gcin-voice binary: package-contains-empty-directory usr/share/hime/ogg/
+gcin-voice binary: package-contains-empty-directory usr/share/gcin/
+gcin-voice binary: package-contains-empty-directory usr/share/hime/
