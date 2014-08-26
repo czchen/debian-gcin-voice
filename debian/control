@@ -13,6 +13,7 @@ Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-ime/gcin-voice.git;a=summar
 
 Package: gcin-voice
 Architecture: all
+Multi-arch: foreign
 Enhances:
  gcin (>= 1.3.5),
  hime (>= 0.9)
