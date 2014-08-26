@@ -5,7 +5,6 @@
 #export DH_VERBOSE=1
 
 DEST=$(CURDIR)/debian/gcin-voice/usr/share/gcin-voice/ogg
-LINTIAN_OVERRIDE=$(CURDIR)/debian/gcin-voice/usr/share/lintian/overrides
 
 %:
 	dh $@
@@ -13,5 +12,3 @@ LINTIAN_OVERRIDE=$(CURDIR)/debian/gcin-voice/usr/share/lintian/overrides
 override_dh_auto_install:
 	mkdir -p $(DEST)
 	xargs -a $(CURDIR)/debian/list cp -r -t $(DEST)
-	mkdir -p $(LINTIAN_OVERRIDE)
-	cp $(CURDIR)/debian/gcin-voice.lintian-overrides $(LINTIAN_OVERRIDE)/gcin-voice
